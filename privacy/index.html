@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODUX — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      color: rgba(255, 255, 255, 0.87);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 48px 24px;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+    .effective {
+      color: rgba(255, 255, 255, 0.40);
+      font-size: 13px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      color: rgba(255, 255, 255, 0.60);
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+    a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin: 32px 0;
+    }
+    .footer {
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 11px;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: May 19, 2026</p>
+
+    <p>MODUX ("we", "our", "the app") is a hybrid athlete training app built by Modux Software. This policy describes what data we collect, how we store it, and your rights.</p>
+
+    <h2>What data we collect</h2>
+    <ul>
+      <li><strong>Profile preferences</strong> — your first name, training goal (e.g. half marathon), experience level, and benchmark lifts. Provided during onboarding.</li>
+      <li><strong>Workout data</strong> — lift sessions (exercises, sets, weight, reps, RPE), manual run entries (distance, duration, pace), and optional nutrition entries.</li>
+      <li><strong>Anonymous user ID</strong> — we use Supabase Anonymous Auth to create a unique identifier for your device. We do not collect your email, phone number, or real name beyond what you voluntarily enter.</li>
+      <li><strong>Strava data</strong> — if you choose to connect Strava, we import your running activities (distance, duration, start time, activity ID). We access only the data you authorize and only read activity data. We never post to Strava on your behalf.</li>
+      <li><strong>Apple HealthKit data</strong> — if you grant permission, we read workout samples (running workouts, distance, duration, energy burned, heart rate). We request read-only access and never write data to HealthKit.</li>
+    </ul>
+
+    <h2>How your data is stored</h2>
+    <p>All data is stored in a Supabase Postgres database. Data is encrypted at rest and in transit (TLS). The database is hosted on AWS infrastructure managed by Supabase, Inc.</p>
+    <p>Local device storage (AsyncStorage) is used for session persistence and user preferences. This data stays on your device.</p>
+
+    <h2>Who can access your data</h2>
+    <p>Only you. Every database query is scoped to your anonymous user ID via Supabase Row Level Security (RLS). Our team does not access individual user data unless you explicitly request support and grant permission.</p>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Supabase</strong> (database, auth, edge functions) — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+      <li><strong>Strava</strong> (activity import, user-initiated only) — <a href="https://www.strava.com/legal/privacy">strava.com/legal/privacy</a></li>
+      <li><strong>Apple HealthKit</strong> (workout read access, user-initiated only) — governed by Apple's privacy framework</li>
+      <li><strong>Expo / EAS</strong> (build and update infrastructure) — <a href="https://expo.dev/privacy">expo.dev/privacy</a></li>
+    </ul>
+
+    <h2>What we do NOT do</h2>
+    <ul>
+      <li>We do not display ads.</li>
+      <li>We do not sell, rent, or share your data with third parties for marketing or advertising purposes.</li>
+      <li>We do not use third-party analytics or tracking SDKs.</li>
+      <li>We do not collect your location, contacts, photos, or any data beyond what is listed above.</li>
+    </ul>
+
+    <h2>Data retention and deletion</h2>
+    <p>Your data is retained as long as your account exists. To request deletion of all your data, email <a href="mailto:tave2000@icloud.com">tave2000@icloud.com</a> with the subject line "MODUX Data Deletion Request." We will delete your data within 14 days of receiving your request. In-app account deletion is planned for a future release.</p>
+
+    <h2>Children's privacy</h2>
+    <p>MODUX is not intended for children under 17. We do not knowingly collect data from anyone under 17 years of age.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy as the app evolves. Changes will be posted at this URL with an updated effective date. Continued use of the app after changes constitutes acceptance.</p>
+
+    <div class="divider"></div>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns about your privacy? Email us at <a href="mailto:tave2000@icloud.com">tave2000@icloud.com</a>.</p>
+
+    <p class="footer">MODUX Software &middot; Vancouver, BC, Canada</p>
+  </div>
+</body>
+</html>
